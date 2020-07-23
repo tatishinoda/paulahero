@@ -2050,23 +2050,91 @@ figure figcaption {
 
 /* ------PERSONALIZAÇÃO------------  */
 
-.site-logo img{
-  max-width: 75%;
-}
-.shrink .site-logo img{
-  max-width: 70%;
+/* -----Menu----- */
+.site-logo img.logo{
+  display:block;
+  width: 100%;
+  max-width: 230px;
   transition: ease 900ms;
 }
-@media (min-width:990px){
-  .site-logo img{
-    max-width: 100%;
+.site-logo img.marca{
+  display: none;
+  transition: ease 900ms;
+}
+.shrink .site-logo img.marca{
+  display: block;
+  width: 100%;
+  max-width: 60px;
+  transition: ease 900ms;
+}
+.shrink .site-logo img.logo{
+  display: none;
+}
+@media (min-width:1280px){
+  .site-logo img.logo{
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    transition: ease 900ms;
   }
-  .shrink .site-logo img{
-    max-width: 70%;
+    .site-logo img.marca{
+     display: none;
+    transition: ease 900ms;
+  }
+  
+  .shrink .site-logo img.logo{
+    display: none;
+    transition: ease 900ms;
+  }
+  .shrink .site-logo img.marca{
+    display: block;
+    width: 50%;
+    max-width: 70px;
     transition: ease 900ms;
   }
 }
-
 .site-mobile-menu .site-mobile-menu-body {
   overflow: hidden;
 }
+
+/* Buttons and Links */
+.btn.btn-primary {
+    background: #5175ff;
+    border: none;
+    color: #fff;
+}
+.btn.btn-primary:hover {
+    background: #a2c0be;
+    border: none;
+    color: #fff;
+}
+
+
+/* -----HERO----- */
+.site-blocks-cover .intro-text {
+    margin-top: 25%;
+}
+.site-blocks-cover h1 {
+    font-size: 3rem;
+    color: #405087;
+    text-transform: initial;
+    text-align: center;
+}
+.site-blocks-cover p {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-align: center;
+}
+.intro-text .btn{
+  margin-top: 20px;
+}
+@media (max-width: 991.98px){
+  .site-blocks-cover h1 {
+    font-size: 2rem;
+  }
+  .site-blocks-cover p {
+    font-size: 1rem;
+  }
+}
+
