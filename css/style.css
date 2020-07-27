@@ -2138,3 +2138,22 @@ figure figcaption {
   }
 }
 
+
+
+/* IMAGE */
+a.hover-1{
+  
+  position:relative;
+
+}
+a.hover-1 .hover{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+.hover-effect:hover .hover{
+  display:block;
+  transition: ease 800ms ;
+}
