@@ -2136,6 +2136,9 @@ figure figcaption {
   .site-blocks-cover p {
     font-size: 1rem;
   }
+  .site-blocks-cover .intro-text {
+    margin-top: 0;
+  } 
 }
 
 
@@ -2156,4 +2159,18 @@ a.hover-1 .hover{
 .hover-effect:hover .hover{
   display:block;
   transition: ease 800ms ;
+}
+
+.cover-img {
+  width: 100%;
+  background: url(/images/cat-dog-top.png) no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 100%;
+  position: absolute;
+  right: 2em;
+}
+
+.index-fix{
+  z-index: 1;
 }
