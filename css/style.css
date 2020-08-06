@@ -2049,6 +2049,9 @@ figure figcaption {
 
 
 /* ------PERSONALIZAÇÃO------------  */
+.index-fix{
+  z-index: 1;
+}
 
 /* -----Menu----- */
 .site-logo img.logo{
@@ -2140,10 +2143,19 @@ figure figcaption {
     margin-top: 0;
   } 
 }
+.cover-img {
+  width: 100%;
+  background: url(/images/cat-dog-top.png) no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 100%;
+  position: absolute;
+  right: 2em;
+}
 
 
 
-/* IMAGE */
+/*------IMAGE----------*/
 a.hover-1{
   
   position:relative;
@@ -2160,17 +2172,26 @@ a.hover-1 .hover{
   display:block;
   transition: ease 800ms ;
 }
-
-.cover-img {
+.video-container{
+  position: relative;
+  background-color: black;
+  height: 200px;
+  min-height: 25rem;
   width: 100%;
-  background: url(/images/cat-dog-top.png) no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-  height: 100%;
-  position: absolute;
-  right: 2em;
+  overflow: hidden;
 }
 
-.index-fix{
-  z-index: 1;
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
