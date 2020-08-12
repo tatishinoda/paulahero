@@ -2145,7 +2145,7 @@ figure figcaption {
 }
 .cover-img {
   width: 100%;
-  background: url(/images/cat-dog-top.png) no-repeat;
+  background: url(images/cat-dog-top.png) no-repeat;
   background-position: center bottom;
   background-size: contain;
   height: 100%;
