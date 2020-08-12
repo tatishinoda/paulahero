@@ -2195,3 +2195,16 @@ a.hover-1 .hover{
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+/* FOOTER */
+.site-footer {
+  padding: 4rem 0 1rem;
+  background: #ccc;
+}
+.site-footer .footer-heading {
+  font-size: 16px;
+  color: #000;
+}
+.site-footer a {
+  color: #000;
+}
